@@ -246,7 +246,7 @@ useEffect(() => {
 ```typescript jsx
 import { FC, memo } from 'react';
 import { useUnit } from 'effector-react';
-import { todoAdding } from '@/model/todo/todo.model';
+import { todoAdding, getTodosEffect } from '@/model/todo/todo.model';
 
 
 export const TodosApp: FC = memo(function TodosApp (props) {
@@ -256,7 +256,8 @@ export const TodosApp: FC = memo(function TodosApp (props) {
         <div>
             <AddTodoForm/>
             <TodoList/>
-            <button onClick={ () => getTodosEffect() } disabled={ loading }>
+            { /* С помощью этой кнопки будем загружать задачи */ }
+            <button onClick={ getTodosEffect } disabled={ loading }>
                 Загрузить список
             </button>
         </div>
@@ -345,7 +346,7 @@ mobx тоже..
 Я его переделывал, но лишь частично. Но вы все равно можете посмотреть как это можно сделать на Redux через Thunk-и.
 
 В этом проекте многое переделывалось на extraReducers и Thunk-и, но выделяеть экшены я не стал, они прям внутри
-thunk-ов. Как я понимаю, сигнатура сохраняется как и в effector, по этому с thunk-ами будет работать тоже удобно.
+thunk-ов. Как я понимаю, сигнатура сохраняется, как и в effector, по этому с thunk-ами будет работать тоже удобно.
 
 - React + Redux Thunk https://github.com/VanyaMate/product
 
@@ -449,9 +450,9 @@ export const authData = createStore<DomainUser | null>(null)
 ****
 
 Так же буду рад вопросам, критике, дополнениям итд.
-Может вы уже давно используете такой подход и есть какие-то неочевидные подводные камни, буду рад, если поделитесь в
-комментариях.
+Может вы уже давно используете такой подход или похожий и есть какие-то неочевидные подводные камни, буду рад, если
+поделитесь в комментариях.
 
 Так же можете написать в личку в tg: https://t.me/VanyaMate
 
-Спасибо за внимание)
+Спасибо за внимание :)
