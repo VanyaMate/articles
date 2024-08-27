@@ -451,7 +451,9 @@ Ps. Это не реклама, это я лишь показываю, что в
 Примерно 2 месяца назад я открыл для себя такой подход и написал о нем [статью](https://habr.com/ru/articles/824842/).
 Тогда еще не было чего-то большого написано полностью с таким подходом, теперь есть. Переписанный полностью на **MVA**.
 
-1. ["Социальная сеть" (github)](https://github.com/VanyaMate/product).
+Все ссылки ведут на github.
+
+1. ["Социальная сеть"](https://github.com/VanyaMate/product).
    Там и сообщения реализованы и посты и друзья и облачное хранилище и уведомлния и всякое другое, но суть в том, что в
    проекте используется **MVA** и всё легко разрабатывается. То есть до этого я что-то разрабатывал, разрабатывал и в
    какой-то момент начинались сложности, а тут всё идет так как будто это новый проект, хотя он уже достаточно большой.
@@ -465,10 +467,12 @@ Ps. Это не реклама, это я лишь показываю, что в
 Ps. Я понимаю, что там в моделях, по подпискам, одинаковые функции, что можно это сделать лучше, но это уже
 детали реализации.
 
-2. [Тудушка (React, своя реализация стора)](https://github.com/VanyaMate/todo-react-sec-test)
-3. [Тудушка (Svelte, Effector)](https://github.com/VanyaMate/todo-svelte-effector-test)
-4. [Тудушка (React, Effector)](https://github.com/VanyaMate/todo-react-effector-test)
-5. [Тудушка (SolidJS, своя реализация стора)](https://github.com/VanyaMate/todo-solidjs-sec-test)
+2. [Частично переписанный этот же проект](https://github.com/VanyaMate/product-svelte) на *Svelte* и *Effector*, но с
+   использованием **MVA**
+3. [Тудушка (React, своя реализация стора)](https://github.com/VanyaMate/todo-react-sec-test)
+4. [Тудушка (Svelte, Effector)](https://github.com/VanyaMate/todo-svelte-effector-test)
+5. [Тудушка (React, Effector)](https://github.com/VanyaMate/todo-react-effector-test)
+6. [Тудушка (SolidJS, своя реализация стора)](https://github.com/VanyaMate/todo-solidjs-sec-test)
 
 ## Итог
 
