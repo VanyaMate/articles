@@ -464,18 +464,19 @@ Ps. Это не реклама, это я лишь показываю, что в
    /action
       /[принадлежность]
          /[имя]
-            name.action.ts
+            [имя].action.ts
    /model
       /[принадлежность]
          /[имя]
-            name.model.ts
-   /ui
+            [имя].model.ts
+   /view
       /[тип компонента (shared, entity, feature, widget, page, layout, etc)]
          /[принадлежность]
             /[Имя]
-               /[ui]
-                  Component.module.css
-                  Component.tsx(.svelte, .etc)
+               /*
+               /ui
+                  [Имя].module.css
+                  [Имя].tsx(.svelte, .etc)
          
 ```
 
